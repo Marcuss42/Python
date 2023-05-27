@@ -1,6 +1,7 @@
 import turtle
 from os import system
 
+
 """
 movimentos:
     w: forward(speed)
