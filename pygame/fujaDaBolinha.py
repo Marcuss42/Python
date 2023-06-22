@@ -68,6 +68,7 @@ class Jogo:
         self.mouse_pos = pygame.mouse.get_pos()
         self.ini = time()
         self.score = 0
+        self.velocidade = int(self.height/100) + 3
 
     def text(self, text, pos):
         font = pygame.font.SysFont(self.font, self.font_size)
