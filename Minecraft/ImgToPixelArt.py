@@ -5,6 +5,13 @@ from PIL import Image, ImageEnhance
 from glob import glob
 import math
 
+"""
+To use, you need to place your PNG image in the 'PixelArt' folder 
+and specify its name in Minecraft (img.png)
+
+It is also necessary to have PIL (Python Imaging Library) installed. (pip install PIL)
+"""
+
 def find_color(paleta, cor_referencia):
     cor_mais_proxima = None
     menor_distancia = float('inf')
@@ -21,16 +28,7 @@ def find_color(paleta, cor_referencia):
             menor_distancia = distancia
 
     return cor_mais_proxima
-
-# Marcuss42
-
-"""
-To use, you need to place your PNG image in the 'PixelArt' folder 
-and specify its name in Minecraft (img.png)
-
-It is also necessary to have PIL (Python Imaging Library) installed. (pip install PIL)
-"""
-
+    
 if len(argv) < 2:
     raise Exception("Provide the img name!!")
 if len(argv) < 3:
