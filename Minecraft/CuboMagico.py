@@ -1,3 +1,4 @@
+# Tutorial: https://www.instructables.com/Python-coding-for-Minecraft/
 from mine import Minecraft, block
 from sys import argv
 from random import choice
